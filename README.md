@@ -18,12 +18,12 @@ https://github.com/rjpost20/Tanzania-Water-Classification-Project/blob/main/Tanz
 
 ## Overview and Business Understanding
 
-In the United States, most of us take for granted that we always have access to clean and safe water. But for hundreds of millions of people across the world, clean water is anything but guaranteed. One nation that is struggling with water insecurity is Tanzania, where as much as half the country–over 20 million people–<a href="https://lifewater.org/blog/tanzania-water-crisis-facts/" >do not have access to safe drinking water.</a><br>
-<br>
-In order to combat this crisis, <a href="http://taarifa.org/" >Taarifa</a> and the <a href="http://maji.go.tz/" >Tanzanian Ministry of Water </a> (TMW) have teamed up to gather data on the nations many water pumps - the primary source of safe drinking water for most Tanzanians. Using this data, I build a classification model that predicts whether a water pump is functional or needs attention (either non-functional or in need of repair).<br>
-<br>
-Using this model, the TMW will be able to improve their efficiency in repairing dysfunctional water pumps, and improve access to clean drinking water for millions of people.<br>
-<br>
+In the United States, most of us take for granted that we always have access to clean and safe water. But for hundreds of millions of people across the world, clean water is anything but guaranteed. One nation that is struggling with water insecurity is Tanzania, where as much as half the country–over 20 million people–<a href="https://lifewater.org/blog/tanzania-water-crisis-facts/" >do not have access to safe drinking water.</a>
+
+In order to combat this crisis, <a href="http://taarifa.org/" >Taarifa</a> and the <a href="http://maji.go.tz/" >Tanzanian Ministry of Water </a> (TMW) have teamed up to gather data on the nations many water pumps - the primary source of safe drinking water for most Tanzanians. Using this data, I build a classification model that predicts whether a water pump is functional or needs attention (either non-functional or in need of repair).
+
+Using this model, the TMW will be able to improve their efficiency in repairing dysfunctional water pumps, and improve access to clean drinking water for millions of people.
+
 A note on scoring metrics: The TMW has not made it explicitly clear to us what the model will be used for. As such, we'll assume that the model will be used for both inferential purposes (i.e. to see which features are most deterministic in producing each condition), and for predictive purposes (i.e. to be able to predict the condition of a water pump based on the data on it).
 
 Taking this assumption on the predictive purposes of the model, it's not clear which class label(s) is the most important to achieve high precision or recall scores on. For example, it may be that the TMW would like a high recall score for the functional water pumps, so they don't dispatch precious resources to pumps that are actually functional. It could also be the case that they want a high recall score for non-functional water pumps so that they can dispatch repair teams as quickly as possible for all non-functional pumps in Tanzania. Given the ambiguity here, we will prioritize a balance between precision and recall across classes and prioritize overall accuracy as the deciding metric when determining the best model.
