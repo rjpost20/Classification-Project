@@ -56,17 +56,21 @@ There were also columns with missing values that contained missing values, we de
 
 ## Modeling and Results
 
-![Presentation slide 5](https://github.com/rjpost20/Tanzania-Water-Classification-Project/blob/main/data/presentation_images/Slide%205.jpeg)
+Below is a chart with compiled training, cross-validation, and test accuracy scores for each model. Models are sorted by descending test accuracy scores, with training accuracy scores breaking the tie in the case of the logistic regression models.
 
-![Presentation slide 6](https://github.com/rjpost20/Tanzania-Water-Classification-Project/blob/main/data/presentation_images/Slide%206.jpeg)
-
-![Data visualization](https://github.com/rjpost20/Tanzania-Water-Classification-Project/blob/main/visualizations/feature_importances_lollipop_plot.png)
-
-![Data visualization](https://github.com/rjpost20/Tanzania-Water-Classification-Project/blob/main/visualizations/top_10_features_class_proportions_plot.png)
-
+![Presentation slide 5](https://github.com/rjpost20/Tanzania-Water-Classification-Project/blob/main/data/presentation_images/Slide%205.jpeg)<br>
 <br>
 
+Our best performing model was the XGBoost model, with a test accuracy score of 79.2%. Below are two visualizations of the performance of the XGBoost model: ROC curves for each of the class labels are plotted on the left and a confusion matrix is plotted on the right.
 
+![Presentation slide 6](https://github.com/rjpost20/Tanzania-Water-Classification-Project/blob/main/data/presentation_images/Slide%206.jpeg)<br>
+<br>
+
+As part of the evaluation of the XGBoost model, we determined the top 10 most important features in the dataset in terms of predictive value. Those features are plotted along the x-axis below, with the proportion of class labels for the data associated with each respective feature plotted along the y-axis.
+
+This data and the visualization were instrumental in giving us the inferential capacity to provide specific, tangible recommendations to the TMW in terms of suggested areas of investigation and analysis - the inferential value of the model.
+
+![Data visualization](https://github.com/rjpost20/Tanzania-Water-Classification-Project/blob/main/visualizations/top_10_features_class_proportions_plot.png)
 
 <br>
 
@@ -82,4 +86,4 @@ We also recommend the TMW investigate the source of non-functionaly associated w
 
 The TMW should also consider investigating `installer`: RWE. This installer had a nearly 65% proportion of non-functional water pumps among the pumps that they installed. This is over 70% higher than the average rate of non-functional water pumps among the entire training dataset. This installer should be investigated to determine why their pumps are performing so poorly, and the TMW should consider discontinuing the use of their services depending on the results of the investigation. 
 
-Lastly, we recommend that the TMW examine `region_code`: 11 to determine the source of their success. The proportion of functional water pumps in region_code: 11 is nearly 80% - that's almost 50% higher than the rate of functional water pumps among the entire training dataset. The features of the pumps in this area should be examined to see if any lessons can be learned from their success.
+Lastly, we recommend that the TMW examine `region_code`: 11 to determine the source of their success. The proportion of functional water pumps in region_code: 11 is nearly 80% - almost 50% higher than the rate of functional water pumps among the entire training dataset. The features of the pumps in this area should be examined to see if any lessons can be learned from their success.
