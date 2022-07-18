@@ -7,8 +7,6 @@ Photo by [lovelyday12](https://stock.adobe.com/contributor/203603884/lovelyday12
 
 ### Links
 
-Medium article:
-
 Presentation slidedeck PDF:
 https://github.com/rjpost20/Tanzania-Water-Classification-Project/blob/main/Tanzania%20Water%20Classification%20Presentation.pdf
 
