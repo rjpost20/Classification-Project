@@ -10,7 +10,7 @@ Photo by [lovelyday12](https://stock.adobe.com/contributor/203603884/lovelyday12
 Presentation slidedeck PDF:
 https://github.com/rjpost20/Tanzania-Water-Classification-Project/blob/main/Tanzania%20Water%20Classification%20Presentation.pdf
 
-*This is an asssignment for learning purposes. The Tanzanian Ministry of Water is not involved with this assignment in any way.*
+*This is an assignment for learning purposes. The Tanzanian Ministry of Water is not involved with this assignment in any way.*
 
 <br>
 
